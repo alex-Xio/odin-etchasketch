@@ -1,2 +1,43 @@
-div {
+:root {
+	--grid-ratio-number: 2;
+}
+body {
+	margin: 0;
+	height: 100vh;
+	width: 100vw;
+}
+
+#main {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+#settings {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-basis: 50px;
+}
+#container {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+}
+
+#grid {
+	height: 90vh;
+	width: 90vh;
+	border: solid 1px black;
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 0;
+}
+
+.pixel {
+	box-sizing: border-box;
+	width: calc(100% / var(--grid-ratio-number));
+}
+
+.marked {
+	background-color: orange;
 }

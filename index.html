@@ -5,7 +5,18 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link href="style.css" rel="stylesheet" />
-		<script src="script.js"></script>
+		<script src="script.js" defer></script>
 	</head>
-	<body></body>
+	<body>
+		<div id="main">
+			<div id="settings">
+				<button type="button" onclick="gridSizePrompt()">
+					Number of squares
+				</button>
+			</div>
+			<div id="container">
+				<div id="grid"></div>
+			</div>
+		</div>
+	</body>
 </html>
